@@ -1,4 +1,4 @@
-/*
+if/*
  * Programming Quiz - Navigating the Food Chain (3-8)
  *
  * Use a series of ternary operator to set the category to one of the following:
