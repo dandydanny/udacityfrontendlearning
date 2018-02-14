@@ -8,9 +8,9 @@
  *  - make sure that your function produces the correct results when it is called multiple times
  */
 
-function laugh(times) {
+function laugh(num) {
 	var response = "";
-	for (var iterations = 0; iterations < times; iterations++) {
+	for (var iterations = 0; iterations < num; iterations++) {
 		response = response + "ha";
 	}
 	response = response + "!";
