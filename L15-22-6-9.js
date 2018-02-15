@@ -20,9 +20,12 @@ var bills = [50.23, 19.12, 34.01,
 ];
 var totals = bills.map(function(elem){
     elem *= 1.15;
-    // elem = Math.round(elem * 100) / 100; //round to 2 decimal places
-    elem = Number(elem.toFixed(2)); //round to 2 decimal places, then casting string back to number
+    // elem = Math.round(elem * 100) / 100; //round to 2 decimal places - using $9.90, this returns 11.39
+    elem = Number(elem.toFixed(2)); //chop to 2 decimal places, then casting string back to number; this returns 11.38
     return elem
 });
 
 console.log(totals);
+
+//Feb 14, 2018 - Lesson 15-22 quiz 6-9 test spec prefers $11.38 for $9.90 plus 15% tip. Realistically, merchants would most likely round up 11.385 to 11.39
+//Lesson description says toFixed(2) rounds to two places. This is incorrect. toFixed(2) simply chops off digits beyond two decimal places
