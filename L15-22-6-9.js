@@ -29,3 +29,4 @@ console.log(totals);
 
 //Feb 14, 2018 - Lesson 15-22 quiz 6-9 test spec prefers $11.38 for $9.90 plus 15% tip. Realistically, merchants would most likely round up 11.385 to 11.39
 //Lesson description says toFixed(2) rounds to two places. This is incorrect. toFixed(2) simply chops off digits beyond two decimal places
+//Feb 23, 2018 - toFixed() actually rounds, but not in the convention that people in USA expects. 5 is rounded down while 6 is rounded up.
