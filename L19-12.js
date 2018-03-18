@@ -28,3 +28,11 @@ function numberAdder() {
 $('p').each(numberAdder);
 
 */
+
+
+/* @alexandertran's elegant solution
+$('p').each(function(){ //iterate through p's
+    var pLength = $(this).text().length; //calculate length
+    $(this).append(pLength); // add length to each p
+});
+*/
